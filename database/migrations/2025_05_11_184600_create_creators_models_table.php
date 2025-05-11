@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('creators_models', function (Blueprint $table) {
             $table->id();
+            $table->string('ProjectName');
+            $table->string('ProjectShortDescription')->nullable();
+            $table->string('ProjectImage')->nullable();
             $table->timestamps();
         });
     }

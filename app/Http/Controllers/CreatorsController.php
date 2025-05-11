@@ -13,4 +13,7 @@ class CreatorsController extends Controller
     public function projects(){
         return Inertia::render('Projects', []);
     }
+    public function create(){
+        return Inertia::render('CreateProject', []);
+    }
 }
