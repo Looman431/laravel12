@@ -23,11 +23,13 @@ export default defineConfig({
         },
     },
     server: { // Секция server на нужном уровне
+        hmr:{
+         host: "25.5.208.162",
+        },
+
+        allowedHosts: true,
         host: true, // Слушать на всех IP
         port: 5173, // Порт Vite
-        hmr: {
-            host: '192.168.0.182', // <--- Указываем публичный IP! Замени, если IP другой.
-        },
         cors: true,
     },
 });
