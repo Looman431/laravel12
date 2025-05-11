@@ -3,4 +3,4 @@
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::inertia('/', 'Test');
+Route::get('/', 'App\Http\Controllers\HomeController@index');
