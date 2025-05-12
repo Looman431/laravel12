@@ -24,7 +24,7 @@ export default function Header({children}: { children: React.ReactNode }){
                     mr-10
                     bg-linear-to-br from-blue-500 to-cyan-500 rounded-md text-black text-sm font-bold
                     transform transition-all hover:text-white hover:cursor-pointer" href="/projects">
-                        Проекты
+                        Проекты24
                     </Link>
                 </nav>
             </header>
