@@ -1,4 +1,4 @@
-import Header from "../layouts/Header"
+import Header from "../layouts/Header.jsx"
 
 export default function Welcome(){
     return (
