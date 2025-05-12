@@ -7,7 +7,8 @@ export default function Header({children}: { children: React.ReactNode }){
                 <nav className="h-18
                 bg-neutral-900
                 flex justify-center items-center
-                rounded-b">
+                rounded-xl
+                space-x-7">
                     <button className="
                     h-10 w-25
                     bg-linear-to-tr from-cyan-500 to-blue-500 rounded text-black text-sm font-bold
