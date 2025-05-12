@@ -16,4 +16,7 @@ class CreatorsController extends Controller
     public function create(){
         return Inertia::render('CreateProject', []);
     }
+    public function store(Request $request){
+
+    }
 }
