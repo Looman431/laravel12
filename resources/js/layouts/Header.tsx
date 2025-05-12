@@ -17,10 +17,10 @@ export default function Header({children}: { children: React.ReactNode }){
 
                     <button className="
                     h-10 w-25
-                    indent-10
+                    mr-10
                     bg-linear-to-br from-blue-500 to-cyan-500 rounded text-black text-sm font-bold
                     transform transition-all hover:text-white hover:cursor-pointer">
-                        Профиль
+                        Проекты
                     </button>
                 </nav>
             </header>
