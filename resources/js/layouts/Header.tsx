@@ -4,10 +4,10 @@ export default function Header({children}: { children: React.ReactNode }){
     return (
         <>
             <header>
-                <nav className="h-15 bg-neutral-900 items-center">
+                <nav className="h-15 bg-neutral-900 align-middle">
                     <button className="
-                    h-7 w-15
-                    bg-linear-to-tr from-cyan-500 to-blue-500 rounded text-black
+                    h-9 w-17
+                    bg-linear-to-tr from-cyan-500 to-blue-500 rounded text-black text-sm
                     transform transition-all hover:bg-black hover:text-white">
                         Профиль
                     </button>
