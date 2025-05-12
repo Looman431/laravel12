@@ -6,8 +6,15 @@ export default function Header({children}: { children: React.ReactNode }){
             <header>
                 <nav className="h-15 bg-neutral-900 flex justify-center items-center">
                     <button className="
-                    h-10 w-20
+                    h-10 w-25
                     bg-linear-to-tr from-cyan-500 to-blue-500 rounded text-black text-sm font-bold
+                    transform transition-all hover:bg-black hover:text-white">
+                        Профиль
+                    </button>
+                    <button className="
+                    h-10 w-25
+                    indent-10
+                    bg-linear-to-br from-blue-500 to-cyan-500 rounded text-black text-sm font-bold
                     transform transition-all hover:bg-black hover:text-white">
                         Профиль
                     </button>
