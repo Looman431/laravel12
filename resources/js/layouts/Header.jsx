@@ -6,7 +6,7 @@ export default function Header({children}){
         <>
             <header>
                 <nav className="h-25
-                bg-neutral-950/75
+                bg-neutral-900
                 flex justify-center items-center
                 rounded-b-xl
                 space-x-7">
@@ -15,7 +15,7 @@ export default function Header({children}){
                     flex items-center content-center justify-center
                     bg-neutral-950/50 rounded-md text-white text-lg font-semibold
                     border-b-4 border-black/70
-                    transform transition-all hover:text-cyan-100 hover:cursor-pointer hover:opacity-10" href="">
+                    transform transition-all hover:text-cyan-100 hover:cursor-pointer hover:opacity-5" href="">
                         Профиль
                     </Link>
 
@@ -25,7 +25,7 @@ export default function Header({children}){
                     flex items-center content-center justify-center
                     bg-neutral-950/50 rounded-md text-white text-lg font-semibold
                     border-b-4 border-black/70
-                    transform transition-all hover:text-cyan-100 hover:cursor-pointer hover:opacity-10" href="/projects">
+                    transform transition-all hover:text-cyan-100 hover:cursor-pointer hover:opacity-5" href="/projects">
                         Проекты
                     </Link>
                 </nav>
