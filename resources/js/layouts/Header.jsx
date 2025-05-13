@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from '@inertiajs/react';
+import { FaTools } from "react-icons/fa";
 
 export default function Header({children}){
     return (
@@ -11,7 +12,10 @@ export default function Header({children}){
                 flex justify-center items-center
                 rounded-b-2xl
                 space-x-7">
-                    <img src="../../img/blue-shield-armor-empty-plate-vector_-fotor-bg-remover-2024011621435.png"></img>
+                    <FaTools>
+                        Creators
+                    </FaTools>
+
                     <Link className="
                     h-10 w-38
                     rounded-lg
