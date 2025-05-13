@@ -9,12 +9,12 @@ export default function Header({children}){
                 <nav className="
                 h-16
                 bg-neutral-900">
-                    <Link href="/">
+                    <Link>
                         <FaTools className="
                         h-6 w-6" />
                     </Link>
 
-                    <Link href="/">
+                    <Link className="flex justify-center items-center">
                         <h1 className="font-semibold">Creators</h1>
                     </Link>
                         <div className="
