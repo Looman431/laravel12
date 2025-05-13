@@ -12,22 +12,21 @@ export default function Header({children}){
                 rounded-b-xl
                 space-x-7">
                     <Link className="
-                    h-8 w-38
+                    h-10 w-38
                     rounded-lg
                     flex items-center content-center justify-center
                     text-white text-md font-semibold
-                    border-b-4 border-black/70
-                    transform transition-all hover:text-cyan-100 hover:cursor-pointer" href="">
+                    transform transition-all hover:text-cyan-100 hover:cursor-pointer hover:bg-opacity-50% hover:bg-neutral-100" href="">
                         Профиль
                     </Link>
 
                     <Link className="
-                    h-8 w-38
+                    h-10 w-38
                     mr-10
                     rounded-lg
                     flex items-center content-center justify-center
                     text-white text-md font-semibold
-                    transform transition-all hover:text-cyan-100 hover:cursor-pointer hover:" href="/projects">
+                    transform transition-all hover:text-cyan-100 hover:cursor-pointer hover:bg-opacity-50% hover:bg-neutral-100" href="/projects">
                         Проекты
                     </Link>
                 </nav>
