@@ -12,18 +12,18 @@ export default function Header({children}){
                 space-x-7">
                     <Link className="
                     h-10 w-25
+                    flex items-center content-center
                     bg-linear-to-tr from-cyan-500 to-blue-500 rounded-md text-black text-sm font-bold
-                    transform transition-all hover:text-white hover:cursor-pointer
-                    items-center" href="">
+                    transform transition-all hover:text-white hover:cursor-pointer" href="">
                         Профиль
                     </Link>
 
                     <Link className="
                     h-10 w-25
                     mr-10
+                    flex items-center content-center
                     bg-linear-to-br from-blue-500 to-cyan-500 rounded-md text-black text-sm font-bold
-                    transform transition-all hover:text-white hover:cursor-pointer
-                    items-center" href="/projects">
+                    transform transition-all hover:text-white hover:cursor-pointer" href="/projects">
                         Проекты
                     </Link>
                 </nav>
