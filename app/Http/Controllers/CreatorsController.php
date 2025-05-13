@@ -22,7 +22,7 @@ class CreatorsController extends Controller
        $ShortView = $request->validate([
            'ProjectName' => 'required',
            'ProjectShortDescription' => 'required|max:100',
-           'ProjectImage' => 'required'//'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+           'ProjectImage' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
        ]);
        CreatorsModel::create($ShortView);
        return redirect('/');
