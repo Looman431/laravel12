@@ -12,9 +12,12 @@ export default function Header({children}){
                 flex justify-center items-center
                 rounded-b-2xl
                 space-x-7">
-                    <FaTools className="
-                    h-10 w-10" />
-                    <h1>Creators</h1>
+                    <Link>
+                        <FaTools className="
+                        h-7 w-7" />
+                    </Link>
+
+                    <h1 className="font-bold mr-5">Creators</h1>
 
                     <Link className="
                     h-10 w-38
