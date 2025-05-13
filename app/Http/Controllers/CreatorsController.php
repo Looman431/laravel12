@@ -13,7 +13,9 @@ class CreatorsController extends Controller
         return Inertia::render('Welcome', []);
     }
     public function projects(){
-        return Inertia::render('Projects', []);
+        return Inertia::render('Projects', [
+            'CreatorsModel' => CreatorsModel::all(),
+        ]);
     }
     public function create(){
         return Inertia::render('CreateProject', []);
