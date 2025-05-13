@@ -5,27 +5,29 @@ export default function Header({children}){
     return (
         <>
             <header>
-                <nav className="h-18
+                <nav className="
+                h-16
                 bg-neutral-900
                 flex justify-center items-center
                 rounded-b-xl
                 space-x-7">
                     <Link className="
-                    h-10 w-28
+                    h-10 w-38
+                    rounded-lg
                     flex items-center content-center justify-center
-                    bg-neutral-950/50 rounded-md text-white text-md font-medium
-                    border-b-4 border-black/70
-                    transform transition-all hover:text-cyan-100 hover:cursor-pointer" href="">
+                    text-white text-md font-semibold
+                    transform transition-all hover:text-cyan-100 hover:cursor-pointer hover:backdrop-opacity-75 hover:bg-white/30" href="">
                         Профиль
                     </Link>
 
                     <Link className="
-                    h-10 w-28
+                    h-10 w-38
                     mr-10
+                    rounded-lg
                     flex items-center content-center justify-center
-                    bg-neutral-950/50 rounded-md text-white text-md font-medium
-                    border-b-4 border-black/70
-                    transform transition-all hover:text-cyan-100 hover:cursor-pointer" href="/projects">
+                    text-white text-md font-semibold
+                    backdrop-invert backdrop-opacity-10
+                    transform transition-all hover:text-cyan-100 hover:cursor-pointer hover:bg-white/30" href="/projects">
                         Проекты
                     </Link>
                 </nav>
