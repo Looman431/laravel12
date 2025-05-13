@@ -18,6 +18,7 @@ class CreatorsController extends Controller
         return Inertia::render('CreateProject', []);
     }
     public function store(Request $request){
+        dd($request);
        $ShortView = $request->validate([
            'project_name' => 'required',
            'project_description' => 'required|max:100',
