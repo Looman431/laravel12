@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from '@inertiajs/react';
 
-export default function Header({children}: { children: React.ReactNode }){
+export default function Header({children}){
     return (
         <>
             <header>
