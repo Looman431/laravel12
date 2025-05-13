@@ -6,18 +6,18 @@ export default function Header({children}){
     return (
         <>
             <header>
-                <nav>
+                <nav className="
+                h-16
+                bg-neutral-900">
                     <Link href="/">
                         <FaTools className="
                         h-6 w-6" />
                     </Link>
 
                     <Link href="/">
-                        <h1 className="font-semibold mr-5">Creators</h1>
+                        <h1 className="font-semibold">Creators</h1>
                     </Link>
                         <div className="
-                        h-16
-                        bg-neutral-900
                         flex justify-center items-center
                         rounded-b-2xl
                         space-x-7">
@@ -40,7 +40,7 @@ export default function Header({children}){
                                 Проекты
                             </Link>
                         </div>
-                </nav>
+                    </nav>
             </header>
             <main>
                 {children}

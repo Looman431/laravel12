@@ -1,8 +1,9 @@
+import Header from "../layouts/Header.jsx"
+
 export default function Projects(){
     return(
         <>
-            <h1>Ссылки на проекты через пагинацию ларавеля</h1>
-            <h1>Скорее всего этим займусь я, но визуально возможно нужна будет твоя помощь(просто с отображением данных поиграешься)</h1>
+            <Header children={undefined} />
         </>
         )
 }
