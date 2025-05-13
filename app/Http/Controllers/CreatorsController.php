@@ -25,6 +25,6 @@ class CreatorsController extends Controller
            'project_image' => 'required'//'required|image|mimes:jpeg,png,jpg,gif|max:2048',
        ]);
        CreatorsModel::create($ShortView);
-       return redirect('/projects');
+       return redirect('/');
     }
 }
