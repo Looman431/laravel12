@@ -14,8 +14,11 @@ export default function Header({children}){
                 space-x-7">
                     <Link href="/">
                         <FaTools className="
-                        h-7 w-7" />
-                        <h1 className="font-bold mr-5">Creators</h1>
+                        h-6 w-6" />
+                    </Link>
+
+                    <Link href="/">
+                        <h1 className="font-semibold mr-5">Creators</h1>
                     </Link>
 
                     <Link className="
