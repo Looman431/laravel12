@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('ProjectName');
             $table->string('ProjectShortDescription')->nullable();
-            $table->string('ProjectImage')->nullable();
+            $table->string('project_image_path')->nullable()->after('ProjectShortDescription'); // nullable() - если картинка не обязательна
             $table->timestamps();
         });
     }
