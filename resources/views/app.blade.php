@@ -13,7 +13,7 @@
             }
         </style>
         <script>
-            document.documentElement.classList.add('dark');
+            document.documentElement.classList.add('');
         </script>
         @routes
         @viteReactRefresh

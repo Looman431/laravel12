@@ -32,7 +32,6 @@ export default function CreateProject(){
                     <textarea rows="3" value={data.ProjectImage} onChange={(e) => setData('ProjectImage', e.target.value)} className={errors.ProjectImage && '!ring-red-500'}></textarea>
                     {errors.ProjectImage &&  <p className="error">{errors.ProjectImage}</p>}
                     <button className="primary-btn mt-4" disabled={processing}>Отправить</button>
-
                 </form>
             </div>
         </>
