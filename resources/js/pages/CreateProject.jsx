@@ -1,10 +1,11 @@
 import {useForm} from "@inertiajs/react";
+import React from 'react';
 
 export default function CreateProject(){
     const { data, setData, post, errors, processing } = useForm({
         ProjectName: "",
         ProjectShortDescription: "",
-        ProjectImage: null,
+        project_image: null,
     });
 
     function submit (e) {
@@ -17,7 +18,7 @@ export default function CreateProject(){
         const file = e.target.files ? e.target.files[0] : null;
         // Устанавливаем файл в состояние формы.
         // useForm автоматически поймет, что это файл и отправит как FormData.
-        setData('ProjectImage', file);
+        setData('project_image', file);
         // Опция { forceFormData: true } здесь обычно не нужна для useForm
         // при установке объекта File, но может быть полезной в других сценариях.
         // setData('project_image', file, { forceFormData: true }); // Можно и так, для ясности

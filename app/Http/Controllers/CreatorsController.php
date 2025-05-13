@@ -19,12 +19,22 @@ class CreatorsController extends Controller
         return Inertia::render('CreateProject', []);
     }
     public function store(Request $request){
-       $ShortView = $request->validate([
+       $validatedData = $request->validate([
            'ProjectName' => 'required',
            'ProjectShortDescription' => 'required|max:100',
-           'ProjectImage' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+           'project_image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
        ]);
-       CreatorsModel::create($ShortView);
-       return redirect('/');
+       $imagePath = null;
+       if($request->hasFile('project_image')){
+           $imagePath = $request->file('project_image')->store('ShortViewIcons', 'public');
+       }
+
+        CreatorsModel::create([
+            'ProjectName' => $validatedData['ProjectName'],                 // Соответствует столбцу DB
+            'ProjectShortDescription' => $validatedData['ProjectShortDescription'], // Соответствует столбцу DB
+            'ProjectImagePath' => $imagePath,                          // Соответствует новому столбцу DB
+        ]);
+        return Redirect::to('/');
+       //return redirect('/');
     }
 }
