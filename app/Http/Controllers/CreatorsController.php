@@ -13,7 +13,7 @@ class CreatorsController extends Controller
         return Inertia::render('Welcome', []);
     }
     public function projects(){
-        dd(CreatorsModel::latest());
+        echo CreatorsModel::latest();
         //return Inertia::render('Projects', [
             //'CreatorsModel' => CreatorsModel::latest(),
         //]);
