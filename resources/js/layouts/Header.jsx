@@ -11,6 +11,7 @@ export default function Header({children}){
                 flex justify-center items-center
                 rounded-b-xl
                 space-x-7">
+                    <div className="bg-[url(../../img/blue-shield-armor-empty-plate-vector_-fotor-bg-remover-2024011621435.png)]"></div>
                     <Link className="
                     h-10 w-38
                     rounded-lg
