@@ -1,7 +1,9 @@
 import {useForm} from "@inertiajs/react";
 import React from 'react';
+import Header from "../layouts/Header.jsx"
 
-export default function CreateProject(){
+
+function CreateProject(){
     const { data, setData, post, errors, processing } = useForm({
         ProjectName: "",
         ProjectShortDescription: "",
@@ -55,3 +57,7 @@ export default function CreateProject(){
         </>
     )
 }
+
+CreateProject.layout = page => <Header children={page}/>
+
+export default CreateProject
