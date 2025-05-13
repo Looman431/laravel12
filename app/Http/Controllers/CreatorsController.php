@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\CreatorsModel;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
 
@@ -14,7 +15,7 @@ class CreatorsController extends Controller
     }
     public function projects(){
         return Inertia::render('Projects', [
-            'CreatorsModel' => CreatorsModel::latest()->limit(1)->get(),
+            'CreatorsModel' => DB::table('creators')->select('ProjectName', 'ProjectShortDescription')->get()
         ]);
     }
     public function create(){
