@@ -14,7 +14,7 @@ class CreatorsController extends Controller
     }
     public function projects(){
         return Inertia::render('Projects', [
-            'CreatorsModel' => CreatorsModel::all()->first,
+            'CreatorsModel' => CreatorsModel::latest(),
         ]);
     }
     public function create(){
@@ -36,7 +36,6 @@ class CreatorsController extends Controller
             'ProjectShortDescription' => $validatedData['ProjectShortDescription'], // Соответствует столбцу DB
             'ProjectImagePath' => $imagePath,                          // Соответствует новому столбцу DB
         ]);
-        return Redirect::to('/');
-       //return redirect('/');
+        return Redirect::to('/projects');
     }
 }
