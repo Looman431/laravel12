@@ -13,8 +13,8 @@ export default function Header({children}){
                     <Link className="
                     h-10 w-28
                     flex items-center content-center justify-center
-                    bg-neutral-950 rounded-md text-black text-md font-bold
-                    border-b-4 border-black
+                    bg-neutral-950/50 rounded-md text-white text-md font-medium
+                    border-b-4 border-black/70
                     transform transition-all hover:text-cyan-100 hover:cursor-pointer" href="">
                         Профиль
                     </Link>
@@ -23,8 +23,8 @@ export default function Header({children}){
                     h-10 w-28
                     mr-10
                     flex items-center content-center justify-center
-                    bg-neutral-950 rounded-md text-white text-md
-                    border-b-4 border-black
+                    bg-neutral-950/50 rounded-md text-white text-md font-medium
+                    border-b-4 border-black/70
                     transform transition-all hover:text-cyan-100 hover:cursor-pointer" href="/projects">
                         Проекты
                     </Link>
