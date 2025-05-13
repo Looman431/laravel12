@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('creators_models', function (Blueprint $table) {
-            //
+            $table->string('ProjectImagePath')->nullable()->after('ProjectShortDescription');
         });
     }
 
@@ -22,7 +22,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('creators_models', function (Blueprint $table) {
-            //
+            $table->dropColumn('ProjectImagePath');
         });
     }
 };
