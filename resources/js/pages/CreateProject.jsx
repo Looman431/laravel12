@@ -9,7 +9,7 @@ export default function CreateProject(){
 
     function submit (e) {
         e.preventDefault()
-        post('/projects/create/check')
+        post('/projects/create/store')
     }
 
     return(

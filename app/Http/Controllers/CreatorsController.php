@@ -20,9 +20,9 @@ class CreatorsController extends Controller
     }
     public function store(Request $request){
        $ShortView = $request->validate([
-           'project_name' => 'required',
-           'project_description' => 'required|max:100',
-           'project_image' => 'required'//'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+           'ProjectName' => 'required',
+           'ProjectShortDescription' => 'required|max:100',
+           'ProjectImage' => 'required'//'required|image|mimes:jpeg,png,jpg,gif|max:2048',
        ]);
        CreatorsModel::create($ShortView);
        return redirect('/');
