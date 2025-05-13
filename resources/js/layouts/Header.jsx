@@ -16,7 +16,7 @@ export default function Header({children}){
                     rounded-lg
                     flex items-center content-center justify-center
                     text-white text-md font-semibold
-                    transform transition-all hover:text-cyan-100 hover:cursor-pointer hover:bg-opacity-50% hover:bg-neutral-100" href="">
+                    transform transition-all hover:text-cyan-100 hover:cursor-pointer hover:backdrop-opacity-75 hover:bg-neutral-100" href="">
                         Профиль
                     </Link>
 
@@ -26,7 +26,7 @@ export default function Header({children}){
                     rounded-lg
                     flex items-center content-center justify-center
                     text-white text-md font-semibold
-                    transform transition-all hover:text-cyan-100 hover:cursor-pointer hover:bg-opacity-50% hover:bg-neutral-100" href="/projects">
+                    transform transition-all hover:text-cyan-100 hover:cursor-pointer hover:backdrop-opacity-75 hover:bg-neutral-100" href="/projects">
                         Проекты
                     </Link>
                 </nav>
