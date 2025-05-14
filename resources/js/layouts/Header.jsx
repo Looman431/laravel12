@@ -10,8 +10,11 @@ export default function Header({children}){
                 h-16
                 rounded-b-2xl
                 bg-neutral-900
-                flex justify-center items-center">
-                    <Link className="flex items-center" href="/">
+                flex justify-center items-center
+                space-x-4">
+                    <Link className="
+                    h-10 w-38
+                    flex items-center" href="/">
                         <FaTools className="
                         h-6 w-6" />
                         <h1 className="font-semibold">Creators</h1>
