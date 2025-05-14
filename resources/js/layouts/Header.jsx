@@ -9,7 +9,8 @@ export default function Header({children}){
                 <nav className="
                 h-16
                 rounded-b-2xl
-                bg-neutral-900">
+                bg-neutral-900
+                flex justify-center items-center">
                     <Link>
                         <FaTools className="
                         h-6 w-6" />
@@ -18,29 +19,26 @@ export default function Header({children}){
                     <Link className="flex items-center">
                         <h1 className="font-semibold">Creators</h1>
                     </Link>
-                        <div className="
-                        flex justify-center items-center
-                        space-x-7">
-                            <Link className="
-                            h-10 w-38
-                            rounded-lg
-                            flex items-center content-center justify-center
-                            text-white text-md font-semibold
-                            transform transition-all hover:text-cyan-100 hover:cursor-pointer hover:backdrop-opacity-75 hover:bg-neutral-900/50" href="">
+                    <Link className="
+                    h-10 w-38
+                    rounded-lg
+                    flex items-center content-center justify-center
+                    text-white text-md font-semibold
+                    transform transition-all hover:text-cyan-100 hover:cursor-pointer hover:backdrop-opacity-75 hover:bg-neutral-900/50" href="">
                                 Профиль
-                            </Link>
+                    </Link>
 
-                            <Link className="
-                            h-10 w-38
-                            mr-10
-                            rounded-lg
-                            flex items-center content-center justify-center
-                            text-white text-md font-semibold
-                            transform transition-all hover:text-cyan-100 hover:cursor-pointer hover:bg-neutral-900/50" href="/projects">
-                                Проекты
-                            </Link>
-                        </div>
-                    </nav>
+                    <Link className="
+                    h-10 w-38
+                    mr-10
+                    rounded-lg
+                    flex items-center content-center justify-center
+                    text-white text-md font-semibold
+                    transform transition-all hover:text-cyan-100 hover:cursor-pointer hover:bg-neutral-900/50" href="/projects">
+                        Проекты
+                    </Link>
+
+                </nav>
             </header>
             <main>
                 {children}
