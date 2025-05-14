@@ -5,19 +5,26 @@ import { Link } from "@inertiajs/react";
 function Projects({CreatorsModel}){
     return(
         <>
+            <div className="
+            w-full
+            flex justify-center items-center">
+                <Link className="
+                h-16 w-124
+                mt-5
+                rounded
+                bg-black/60
+                text-lg text-white font-semibold
+                flex justify-center items-center
+                transition ease-in-out
+                hover:bg-white hover:text-black hover:translate-y-1" href="/projects/create">
+                    Создать проект
+                </Link>
+            </div>
+
             <h1 className="title">Тест передачи данных</h1>
             <br/>
             <h1>{CreatorsModel.ProjectName}</h1>
             <h1>{CreatorsModel.ProjectShortDescription}</h1>
-
-            <Link className="
-            h-14 w-28
-            ml-10
-            rounded
-            bg-neutral-950
-            border-b-6 border-black" href="/projects/create">
-                Создать проект
-            </Link>
         </>
         )
 }
