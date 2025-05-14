@@ -14,7 +14,9 @@ function Projects({CreatorsModel}){
                 rounded
                 bg-black/60
                 text-lg text-white font-semibold
-                flex justify-center items-center" href="/projects/create">
+                flex justify-center items-center
+                transition ease-in-out
+                hover:bg-white hover:text-black hover:translate-y-1" href="/projects/create">
                     Создать проект
                 </Link>
             </div>
