@@ -13,28 +13,25 @@ export default function Header({children}){
                 flex justify-center items-center
                 space-x-4">
                     <Link className="
-                    h-10 w-38
                     flex items-center" href="/">
                         <FaTools className="
                         h-6 w-6" />
                         <h1 className="font-semibold">Creators</h1>
                     </Link>
                     <Link className="
-                    h-10 w-38
                     rounded-lg
                     flex items-center content-center justify-center
                     text-white text-md font-semibold
-                    transform transition-all hover:text-cyan-100 hover:cursor-pointer hover:backdrop-opacity-75 hover:bg-neutral-900/50" href="">
+                    transform transition-all hover:text-cyan-100 hover:cursor-pointer" href="">
                                 Профиль
                     </Link>
 
                     <Link className="
-                    h-10 w-38
                     mr-10
                     rounded-lg
                     flex items-center content-center justify-center
                     text-white text-md font-semibold
-                    transform transition-all hover:text-cyan-100 hover:cursor-pointer hover:bg-neutral-900/50" href="/projects">
+                    transform transition-all hover:text-cyan-100 hover:cursor-pointer" href="/projects">
                         Проекты
                     </Link>
 
