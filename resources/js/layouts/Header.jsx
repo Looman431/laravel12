@@ -11,7 +11,7 @@ export default function Header({children}){
                 rounded-b-2xl
                 bg-neutral-900
                 flex justify-center items-center
-                space-x-4">
+                space-x-10">
                     <Link className="
                     flex items-center" href="/">
                         <FaTools className="
