@@ -12,7 +12,7 @@ function Projects({CreatorsModel}){
                 h-16 w-124
                 mt-5
                 rounded
-                bg-black
+                bg-black/60
                 text-lg text-white font-semibold
                 flex justify-center items-center" href="/projects/create">
                     Создать проект
