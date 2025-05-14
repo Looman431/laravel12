@@ -8,18 +8,18 @@ export default function Header({children}){
             <header>
                 <nav className="
                 h-16
+                rounded-b-2xl
                 bg-neutral-900">
                     <Link>
                         <FaTools className="
                         h-6 w-6" />
                     </Link>
 
-                    <Link className="flex justify-center items-center">
+                    <Link className="flex items-center">
                         <h1 className="font-semibold">Creators</h1>
                     </Link>
                         <div className="
                         flex justify-center items-center
-                        rounded-b-2xl
                         space-x-7">
                             <Link className="
                             h-10 w-38
