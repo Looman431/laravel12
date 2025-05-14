@@ -28,7 +28,7 @@ function CreateProject(){
 
     return(
         <>
-            <h1 className="title">Форма для создания поста</h1>
+            <h1 className="title">Форма для создания проекта</h1>
             {/*data.CategoryName}<br/>
             {data.CategoryDescription*/}
 
