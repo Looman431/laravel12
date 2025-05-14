@@ -11,12 +11,9 @@ export default function Header({children}){
                 rounded-b-2xl
                 bg-neutral-900
                 flex justify-center items-center">
-                    <Link>
+                    <Link className="flex items-center" href="/">
                         <FaTools className="
                         h-6 w-6" />
-                    </Link>
-
-                    <Link className="flex items-center">
                         <h1 className="font-semibold">Creators</h1>
                     </Link>
                     <Link className="
