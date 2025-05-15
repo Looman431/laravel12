@@ -1,9 +1,13 @@
+import React from 'react';
+import Header from '@/layouts/Header.jsx';
 function Lore(){
     return(
         <>
-
+            <h1 className="title">Testik</h1>
         </>
         )
 }
 
-export default
+Lore.layout = page => <Header children={page}/>
+
+export default Lore;
