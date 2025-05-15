@@ -14,7 +14,7 @@ class CreatorsController extends Controller
         return Inertia::render('Welcome', []);
     }
     public function projects(){
-        $CreatorsModel = CreatorsModel::query()->first();
+        $CreatorsModel = CreatorsModel::find(1);
         return Inertia::render('Projects', [
             'CreatorsModel' => $CreatorsModel,
         ]);
