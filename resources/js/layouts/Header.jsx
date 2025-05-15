@@ -11,7 +11,7 @@ export default function Header({children}){
                 rounded-b-2xl
                 bg-[#1F1F1F]
                 flex justify-center items-center
-                font-serif font-semibold
+                font-sans
                 space-x-10">
                     <Link className="
                     flex items-center" href="/">
