@@ -13,10 +13,10 @@ class CreatorsController extends Controller
     public function index(){
         return Inertia::render('Welcome', []);
     }
-    public function projects(){
-        $CreatorsModel = CreatorsModel::find(1);
+    public function projects(CreatorsModel $creators){
+        $CreatorsModel = CreatorsModel::find(2);
         return Inertia::render('Projects', [
-            'CreatorsModel' => $CreatorsModel,
+            'CreatorsModel' => $creators,
         ]);
     }
     public function create(){
