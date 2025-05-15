@@ -4,6 +4,8 @@ use App\Http\Controllers\CreatorsController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
+//База
+Route::redirect('/', '/creators');
 //Роутеры креаторс
 Route::get('/creators', [CreatorsController::class, 'index']);
 Route::get('/creators/lore',[CreatorsController::class,'lore']);
