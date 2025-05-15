@@ -3,7 +3,7 @@ import Header from '@/layouts/Header.jsx';
 function Lore(){
     return(
         <>
-            <h1 className="title">Testik</h1>
+            <h1 className="title">Давным давно, в далекой далекой галактике был креаторс</h1>
         </>
         )
 }
