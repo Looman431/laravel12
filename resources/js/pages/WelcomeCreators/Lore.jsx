@@ -1,5 +1,6 @@
 import React from 'react';
-import Header from '@/layouts/Header.jsx';
+import Header from "../../layouts/Header.jsx"
+
 function Lore(){
     return(
         <>

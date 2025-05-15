@@ -10,9 +10,20 @@ use Inertia\Inertia;
 
 class CreatorsController extends Controller
 {
+    //Контроллеры WelcomeCreators
     public function index(){
-        return Inertia::render('Welcome', []);
+        return Inertia::render('/WelcomeCreators/Welcome', []);
     }
+
+    public function lore(){
+        return Inertia::render('/WelcomeCreators/Lore', []);
+    }
+
+    public function CreatorsDescription(){
+        return Inertia::render('/WelcomeCreators/CreatorsDescription', []);
+    }
+
+    //Контроллеры Projects
     public function projects(CreatorsModel $creators){
         $CreatorsModel = CreatorsModel::find(2);
         return Inertia::render('Projects', [
@@ -39,8 +50,5 @@ class CreatorsController extends Controller
             'ProjectImagePath' => $imagePath,                          // Соответствует новому столбцу DB
         ]);
         return Redirect::to('/projects');
-    }
-    public function lore(){
-        return Inertia::render('Lore', []);
     }
 }
