@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "../../layouts/Header.jsx"
 
-default function CreatorsDescription(){
+function CreatorsDescription(){
     return(
         <>
            <h1 className="title">Креаторс... ну это штука такая крутая, ну рил крутая</h1>
