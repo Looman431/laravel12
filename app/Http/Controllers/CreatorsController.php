@@ -12,15 +12,15 @@ class CreatorsController extends Controller
 {
     //Контроллеры WelcomeCreators
     public function index(){
-        return Inertia::render('/WelcomeCreators/Welcome', []);
+        return Inertia::render('WelcomeCreators/Welcome', []);
     }
 
     public function lore(){
-        return Inertia::render('/WelcomeCreators/Lore', []);
+        return Inertia::render('WelcomeCreators/Lore', []);
     }
 
     public function CreatorsDescription(){
-        return Inertia::render('/WelcomeCreators/CreatorsDescription', []);
+        return Inertia::render('WelcomeCreators/CreatorsDescription', []);
     }
 
     //Контроллеры Projects

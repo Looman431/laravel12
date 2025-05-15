@@ -9,7 +9,7 @@ Route::redirect('/', '/creators');
 //Роутеры креаторс
 Route::get('/creators', [CreatorsController::class, 'index']);
 Route::get('/creators/lore',[CreatorsController::class,'lore']);
-Route::get('/creators/description',[CreatorsController::class,'description']);
+Route::get('/creators/description',[CreatorsController::class,'CreatorsDescription']);
 
 //Роутеры projects
 Route::get('/projects', [CreatorsController::class, 'projects']);
