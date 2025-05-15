@@ -17,12 +17,12 @@ export default function Header({children}){
                     flex items-center" href="/">
                         <FaTools className="
                         h-6 w-6" />
-                        <h1 className="font-semibold">Creators</h1>
+                        <h1>Creators</h1>
                     </Link>
                     <Link className="
                     rounded-lg
                     flex items-center content-center justify-center
-                    text-white text-md font-semibold
+                    text-white text-md
                     transform transition-all hover:text-cyan-100 hover:cursor-pointer" href="">
                                 Профиль
                     </Link>
@@ -31,7 +31,7 @@ export default function Header({children}){
                     mr-10
                     rounded-lg
                     flex items-center content-center justify-center
-                    text-white text-md font-semibold
+                    text-white text-md
                     transform transition-all hover:text-cyan-100 hover:cursor-pointer" href="/projects">
                         Проекты
                     </Link>
