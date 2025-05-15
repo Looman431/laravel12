@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class CreatorsModel extends Model
 {
+    //protected $table = 'creators_models';
+    //protected $primaryKey = 'creators_models_id';
     protected $fillable = [
         'id',
         'ProjectName',
