@@ -9,7 +9,7 @@ export default function Header({children}){
                 <nav className="
                 h-16
                 rounded-b-2xl
-                bg-neutral-900
+                bg-[#1F1F1F]
                 flex justify-center items-center
                 space-x-10">
                     <Link className="
