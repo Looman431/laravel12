@@ -8,3 +8,4 @@ Route::get('/', [CreatorsController::class, 'index']);
 Route::get('/projects', [CreatorsController::class, 'projects']);
 Route::get('/projects/create',[CreatorsController::class,'create']);
 Route::post('/projects/create/store',[CreatorsController::class,'store']);
+Route::get('/lore',[CreatorsController::class,'lore']);

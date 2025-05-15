@@ -16,7 +16,7 @@ class CreatorsController extends Controller
     public function projects(CreatorsModel $creators){
         $CreatorsModel = CreatorsModel::find(2);
         return Inertia::render('Projects', [
-            'CreatorsModel' => $creators,
+            'CreatorsModel' => $CreatorsModel,
         ]);
     }
     public function create(){
@@ -39,5 +39,8 @@ class CreatorsController extends Controller
             'ProjectImagePath' => $imagePath,                          // Соответствует новому столбцу DB
         ]);
         return Redirect::to('/projects');
+    }
+    public function lore(){
+        return Inertia::render('Lore', []);
     }
 }

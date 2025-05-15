@@ -15,12 +15,12 @@
         <script>
             document.documentElement.classList.add('dark');
         </script>
-        @routes
         @viteReactRefresh
-        @vite(['resources/js/app.jsx', "resources/js/pages/{$page['component']}.jsx"])
+        @vite('resources/css/app.css')
+        @vite('resources/js/app.jsx')
         @inertiaHead
     </head>
-    <body class="font-sans antialiased">
+    <body>
         @inertia
     </body>
 </html>
