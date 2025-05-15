@@ -7,10 +7,11 @@ export default function Header({children}){
         <>
             <header>
                 <nav className="
-                h-16
+                h-24
                 rounded-b-2xl
                 bg-[#1F1F1F]
                 flex justify-center items-center
+                font-sans
                 space-x-10">
                     <Link className="
                     flex items-center" href="/">
