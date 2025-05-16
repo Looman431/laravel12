@@ -46,7 +46,7 @@ function Projects({Project}){
                             key={link.label}
                             href={link.url}
                             dangerouslySetInnerHTML={{__html: link.label }}
-                            className={p-1 mx-1 ${ link.active ? "text-blue-500 font-bold" : ""}}
+                            className="p-1 mx-1 focus:text-blue-500 focus:font-bold"
                         />
                     ) : (
                         <span
