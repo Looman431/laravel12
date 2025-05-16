@@ -1,4 +1,6 @@
-import Header from "../layouts/Header.jsx"
+import Header from "../../layouts/Header.jsx"
+import React from 'react';
+
 
 export default function Welcome(){
     return (

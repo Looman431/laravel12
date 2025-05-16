@@ -10,13 +10,25 @@ use Inertia\Inertia;
 
 class CreatorsController extends Controller
 {
+    //Контроллеры WelcomeCreators
     public function index(){
-        return Inertia::render('Welcome', []);
+        return Inertia::render('WelcomeCreators/Welcome', [
+        ]);
     }
+
+    public function lore(){
+        return Inertia::render('WelcomeCreators/Lore', []);
+    }
+
+    public function CreatorsDescription(){
+        return Inertia::render('WelcomeCreators/CreatorsDescription', []);
+    }
+
+    //Контроллеры Projects
     public function projects(CreatorsModel $creators){
-        $CreatorsModel = CreatorsModel::find(2);
+        $Project = CreatorsModel::latest()->paginate(5);
         return Inertia::render('Projects', [
-            'CreatorsModel' => $CreatorsModel,
+            'Project' => $Project,
         ]);
     }
     public function create(){
@@ -40,7 +52,9 @@ class CreatorsController extends Controller
         ]);
         return Redirect::to('/projects');
     }
-    public function lore(){
-        return Inertia::render('Lore', []);
+    public function show(CreatorsModel $project){
+        Inertia::render('ProjectsShow', [
+             'Projects' => CreatorsModel::findOrfail($project),
+        ]);
     }
 }

@@ -2,7 +2,7 @@ import Header from "../layouts/Header.jsx";
 import React from 'react';
 import { Link } from "@inertiajs/react";
 
-function Projects({CreatorsModel}){
+function Projects({Project}){
     return(
         <>
             <div className="
@@ -20,11 +20,24 @@ function Projects({CreatorsModel}){
                     Создать проект
                 </Link>
             </div>
-
-            <h1 className="title">Тест передачи данных</h1>
-            <br/>
-            <h1>{CreatorsModel.ProjectName}</h1>
-            <h1>{CreatorsModel.ProjectShortDescription}</h1>
+            <h1 className="title">Проекты</h1>
+            <div>
+                {Project.data.map(projects => (
+                    <div key={projects.id} className="p-4 border-b">
+                        <div className="text-sm text-slate-600">
+                            <span>
+                                Created at:
+                            </span>
+                            <span>
+                                {new Date(projects.created_at).toLocaleTimeString()}
+                            </span>
+                        </div>
+                        <p className="font-medium">{projects.ProjectName}</p>
+                        <p className="font-medium">{projects.ProjectShortDescription}</p>
+                        <br/>
+                    </div>
+                ))}
+            </div>
         </>
         )
 }
