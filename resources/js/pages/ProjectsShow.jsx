@@ -1,13 +1,10 @@
 import Header from "../layouts/Header.jsx";
 import React from 'react';
 import { Link } from "@inertiajs/react";
-function ProjectsShow({Projects}){
+function ProjectsShow(){
     return(
         <>
             <h1 className="title">Testttt</h1>
-            <h1>{Projects.id}</h1>
-            <h1>{Projects.ProjectName}</h1>
-            <h1>{Projects.ProjectShortDescription}</h1>
         </>
     )
 }
