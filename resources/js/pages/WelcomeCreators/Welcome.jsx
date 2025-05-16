@@ -6,7 +6,7 @@ export default function Welcome(){
     return (
         <>
             <Header children={undefined} />
-            <div className="bg-[url(../../../img/image_2025-05-15_15-05-58 1.png)] bg-cover bg-center"></div>
+            <img src="../../../img/image_2025-05-15_15-05-58%201.png" className="w-full h-full" alt=""></img>
         </>
     );
 }
