@@ -35,7 +35,6 @@ function Projects({Project}){
                         <p className="font-medium">{projects.ProjectName}</p>
                         <p className="font-medium">{projects.ProjectShortDescription}</p>
                         <br/>
-                        <Link href={route('projects.show')} className="text-blue-300">Подробнее...</Link>
                     </div>
                 ))}
             </div>
