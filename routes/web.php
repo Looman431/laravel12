@@ -15,4 +15,4 @@ Route::get('/creators/description',[CreatorsController::class,'CreatorsDescripti
 Route::get('/projects', [CreatorsController::class, 'projects']);
 Route::get('/projects/create',[CreatorsController::class,'create']);
 Route::post('/projects/create/store',[CreatorsController::class,'store']);
-Route::get('/projects/{projects}',[CreatorsController::class,'show'])->name('projects.show');
+Route::get('/projects/{project}',[CreatorsController::class,'show'])->name('projects.show');
