@@ -1,7 +1,7 @@
 import Header from "../layouts/Header.jsx";
 import React from 'react';
 import { Link } from "@inertiajs/react";
-function ProjectsShow({Projects}){
+function ProjectsShow({Project}){
     console.log('ProjectsShow компонент загружен'); // Увидим, если компонент начал выполняться
     console.log('Получен пропс Projects:', Projects);
     console.log('ID:', Projects ? Projects.id : 'нет ID');
@@ -11,8 +11,8 @@ function ProjectsShow({Projects}){
     return(
         <>
             <h1 className="title">Testttt</h1>
-            <h1>{Projects.ProjectName}</h1>
-            <h1>{Projects.ProjectShortDescription}</h1>
+            <h1>{Project.ProjectName}</h1>
+            <h1>{Project.ProjectShortDescription}</h1>
         </>
     )
 }
