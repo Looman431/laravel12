@@ -12,7 +12,10 @@ class CreatorsController extends Controller
 {
     //Контроллеры WelcomeCreators
     public function index(){
-        return Inertia::render('WelcomeCreators/Welcome', []);
+        $Project = CreatorsModel::latest()->paginate(5);
+        return Inertia::render('WelcomeCreators/Welcome', [
+            'Project' =>  $Project,
+        ]);
     }
 
     public function lore(){
@@ -50,5 +53,10 @@ class CreatorsController extends Controller
             'ProjectImagePath' => $imagePath,                          // Соответствует новому столбцу DB
         ]);
         return Redirect::to('/projects');
+    }
+    public function show(CreatorsModel $project){
+        Inertia::render('ProjectsShow', [
+             'Projects' => $project,
+        ]);
     }
 }
