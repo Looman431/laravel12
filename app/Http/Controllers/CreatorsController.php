@@ -54,7 +54,7 @@ class CreatorsController extends Controller
     }
     public function show(CreatorsModel $project){
         Inertia::render('ProjectsShow', [
-             'Projects' => CreatorsModel::findOrfail($project),
+             'Projects' => $project,
         ]);
     }
 }
