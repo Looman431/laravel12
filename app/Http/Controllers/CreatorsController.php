@@ -53,7 +53,6 @@ class CreatorsController extends Controller
         return Redirect::to('/projects');
     }
     public function show(CreatorsModel $project){
-        dd($project);
         Inertia::render('ProjectsShow', [
              'Projects' => $project,
         ]);
