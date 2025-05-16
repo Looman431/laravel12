@@ -55,7 +55,7 @@ class ProjectsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id, CreatorsModel $project)
+    public function show(CreatorsModel $project)
     {
         Inertia::render('ProjectsShow', [
             'Project' => $project,
