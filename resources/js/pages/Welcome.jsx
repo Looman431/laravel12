@@ -4,7 +4,7 @@ export default function Welcome(){
     return (
         <>
             <Header children={undefined} />
-            <img src="../../img/image_2025-05-15_15-05-58%201.png"></img>
+            <div className="bg-[url(../../img/image_2025-05-15_15-05-58 1.png)]"></div>
         </>
     );
 }
