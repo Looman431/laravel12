@@ -6,7 +6,8 @@ export default function Welcome(){
     return (
         <>
             <Header children={undefined} />
-            <div className="bg-[url(../../../img/image_2025-05-15_15-05-58 1.png)] bg-cover bg-center"></div>
+            <img src="/image_2025-05-15_15-05-58%201.png" className="w-full" alt=""></img>
+            <img src="/blue-shield-armor-empty-plate-vector_-fotor-bg-remover-2024011621435.png" className="w-256 h-256 absolute" alt=""></img>
         </>
     );
 }
