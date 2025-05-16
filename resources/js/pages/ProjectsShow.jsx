@@ -13,4 +13,4 @@ function ProjectsShow({Projects}){
 }
 
 ProjectsShow.layout = page => <Header children={page}/>
-export default ProjectsShow
+export default ProjectsShow;
