@@ -53,8 +53,9 @@ class CreatorsController extends Controller
         return Redirect::to('/projects');
     }
     public function show(CreatorsModel $project){
+        $kostyl = CreatorsModel::findOrfail($project);
         Inertia::render('ProjectsShow', [
-             'Projects' => $project,
+             'Projects' => $kostyl,
         ]);
     }
 }

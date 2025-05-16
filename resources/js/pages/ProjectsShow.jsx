@@ -5,6 +5,7 @@ function ProjectsShow({Projects}){
     return(
         <>
             <h1 className="title">Testttt</h1>
+            <h1>{Projects.id}</h1>
             <h1>{Projects.ProjectName}</h1>
             <h1>{Projects.ProjectShortDescription}</h1>
         </>
