@@ -13,7 +13,7 @@ function Projects({Project}){
                 mt-5
                 rounded
                 bg-black/60
-                text-lg text-wЫhite font-semibold
+                text-lg text-white font-semibold
                 flex justify-center items-center
                 transition ease-in-out
                 hover:bg-white hover:text-black hover:-translate-y-1" href="/projects/create">

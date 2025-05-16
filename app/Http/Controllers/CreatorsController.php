@@ -12,9 +12,7 @@ class CreatorsController extends Controller
 {
     //Контроллеры WelcomeCreators
     public function index(){
-        $Project = CreatorsModel::latest()->paginate(5);
         return Inertia::render('WelcomeCreators/Welcome', [
-            'Project' =>  $Project,
         ]);
     }
 
@@ -28,9 +26,9 @@ class CreatorsController extends Controller
 
     //Контроллеры Projects
     public function projects(CreatorsModel $creators){
-        $CreatorsModel = CreatorsModel::find(2);
+        $Project = CreatorsModel::latest()->paginate(5);
         return Inertia::render('Projects', [
-            'CreatorsModel' => $CreatorsModel,
+            'Project' => $Project,
         ]);
     }
     public function create(){
