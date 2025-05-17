@@ -57,12 +57,9 @@ class ProjectsController extends Controller
      */
     public function show(CreatorsModel $project)
     {
-        return view('test', [
-            'project' => $project,
+        return Inertia::render('ProjectsShow', [
+            'Project' => $project,
         ]);
-        //Inertia::render('ProjectsShow', [
-            //'Project' => $project,
-        //]);
     }
 
     /**
