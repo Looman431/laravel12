@@ -14,11 +14,9 @@ Route::get('/creators/description',[CreatorsController::class,'CreatorsDescripti
 
 //Роутеры projects
 //Route::get('/projects', [CreatorsController::class, 'projects']);
-//Route::get('/projects/create',[CreatorsController::class,'create']);
+Route::get('/projects/create',[CreatorsController::class,'create']);
 //Route::post('/projects/create/store',[CreatorsController::class,'store']);
 //Route::get('/projects/{project}',[CreatorsController::class,'show'])->name('projects.show');
 
 //Роутер ресурса projects (новый)
-Route::get('/projects/{project:id}',[ProjectsController::class,'show'])->name('projects.show');
-Route::post('/projects/create/store',[ProjectsController::class,'store'])->name('projects.store');
-Route::resource('projects', ProjectsController::class)->except(['store','show']);
+Route::resource('projects', ProjectsController::class)->except(['create']);
