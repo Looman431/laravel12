@@ -9,5 +9,6 @@
 </head>
 <body>
       <h1>Testmodelbinding</h1>
+      <h1>{{ $project->ProjectName }}</h1>
 </body>
 </html>
