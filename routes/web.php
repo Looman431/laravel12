@@ -20,3 +20,6 @@ Route::post('/projects/create/store',[CreatorsController::class,'store']);
 
 //Роутер ресурса projects (новый)
 Route::resource('projects', ProjectsController::class)->except(['create','store']);
+
+//Тест ларавеля без вайта
+Route::view('/laravel', 'test');

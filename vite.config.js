@@ -23,7 +23,7 @@ export default defineConfig({
     },
     server: { // Секция server на нужном уровне
         hmr:{
-         host: "25.5.208.162",
+         host: "25.30.213.87",
         },
 
         allowedHosts: true,
