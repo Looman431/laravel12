@@ -15,7 +15,7 @@ require __DIR__ . '/settings.php';
 require __DIR__ . '/auth.php';
 
 //База
-Route::redirect('/', '/creators');
+Route::redirect('/', '/creators')->name('home');
 //Роутеры креаторс
 Route::get('/creators', [CreatorsController::class, 'index']);
 Route::get('/creators/lore',[CreatorsController::class,'lore']);

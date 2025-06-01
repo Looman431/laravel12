@@ -15,6 +15,7 @@
         <script>
             document.documentElement.classList.add('dark');
         </script>
+        @routes
         @viteReactRefresh
         @vite('resources/css/app.css')
         @vite('resources/js/app.jsx')
