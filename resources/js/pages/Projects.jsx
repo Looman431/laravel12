@@ -1,6 +1,7 @@
 import Header from "../layouts/Header.jsx";
 import React from 'react';
 import { Link } from "@inertiajs/react";
+import { route } from 'ziggy-js';
 
 function Projects({Project}){
     return(
@@ -19,6 +20,8 @@ function Projects({Project}){
                 hover:bg-white hover:text-black hover:-translate-y-1" href="/projects/create">
                     Создать проект
                 </Link>
+
+
             </div>
             <h1 className="title">Проекты</h1>
             <div>
@@ -26,7 +29,7 @@ function Projects({Project}){
                     <div key={projects.id} className="p-4 border-b">
                         <div className="text-sm text-slate-600">
                             <span>
-                                Created at:
+                                Проект создан:
                             </span>
                             <span>
                                 {new Date(projects.created_at).toLocaleTimeString()}
@@ -34,6 +37,7 @@ function Projects({Project}){
                         </div>
                         <p className="font-medium">{projects.ProjectName}</p>
                         <p className="font-medium">{projects.ProjectShortDescription}</p>
+                        <Link className="font-bold text-blue-400 " href={`/projects/${projects.id}`}>Подробнее</Link>
                         <br/>
                     </div>
                 ))}
