@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from '@inertiajs/react';
 import { FaTools } from "react-icons/fa";
+import { SegmentedControl } from "@radix-ui/themes";
 
 export default function Header({children}){
     return (
@@ -35,6 +36,11 @@ export default function Header({children}){
                     transform transition-all hover:text-cyan-100 hover:cursor-pointer" href="/projects">
                         Проекты
                     </Link>
+                    <SegmentedControl.Root defaultValue="inbox">
+                        <SegmentedControl.Item value="inbox">Inbox</SegmentedControl.Item>
+                        <SegmentedControl.Item value="drafts">Drafts</SegmentedControl.Item>
+                        <SegmentedControl.Item value="sent">Sent</SegmentedControl.Item>
+                    </SegmentedControl.Root>
 
                 </nav>
             </header>
