@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Auth;
 
 class ProjectsController extends Controller
 {
@@ -15,7 +16,7 @@ class ProjectsController extends Controller
      */
     public function index()
     {
-        $Project = CreatorsModel::latest()->paginate(5);
+        $Project = CreatorsModel::paginate(5);
         return Inertia::render('Projects', [
             'Project' => $Project,
         ]);
