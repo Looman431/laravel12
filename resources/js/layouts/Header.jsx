@@ -41,11 +41,6 @@ export default function Header({children}){
                         <SegmentedControl.Item value="drafts">Drafts</SegmentedControl.Item>
                         <SegmentedControl.Item value="sent">Sent</SegmentedControl.Item>
                     </SegmentedControl.Root>
-                    <Spinner />
-                    <Spinner />
-                    <Spinner />
-                    <Spinner />
-                    <Spinner />
 
                 </nav>
             </header>
