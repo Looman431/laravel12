@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from '@inertiajs/react';
 import { FaTools } from "react-icons/fa";
-import { SegmentedControl } from "@radix-ui/themes";
+import { SegmentedControl, Spinner } from "@radix-ui/themes";
 
 export default function Header({children}){
     return (
@@ -41,6 +41,11 @@ export default function Header({children}){
                         <SegmentedControl.Item value="drafts">Drafts</SegmentedControl.Item>
                         <SegmentedControl.Item value="sent">Sent</SegmentedControl.Item>
                     </SegmentedControl.Root>
+                    <Spinner />
+                    <Spinner />
+                    <Spinner />
+                    <Spinner />
+                    <Spinner />
 
                 </nav>
             </header>
