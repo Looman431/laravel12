@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from '@inertiajs/react';
-import { FaTools } from "react-icons/fa";
-import { SegmentedControl, Spinner } from "@radix-ui/themes";
 
 export default function Header({children}){
     return (
@@ -15,11 +13,13 @@ export default function Header({children}){
                 font-medium
                 space-x-10">
                     <Link className="
-                    flex items-center" href="/">
-                        <FaTools className="
-                        h-6 w-6" />
-                        <h1>Creators</h1>
+                    rounded-lg
+                    flex items-center content-center justify-center
+                    text-white text-md
+                    transform transition-all hover:text-cyan-100 hover:cursor-pointer" href="/">
+                        Creators
                     </Link>
+
                     <Link className="
                     rounded-lg
                     flex items-center content-center justify-center
@@ -36,11 +36,6 @@ export default function Header({children}){
                     transform transition-all hover:text-cyan-100 hover:cursor-pointer" href="/projects">
                         Проекты
                     </Link>
-                    <SegmentedControl.Root defaultValue="inbox">
-                        <SegmentedControl.Item value="inbox">Inbox</SegmentedControl.Item>
-                        <SegmentedControl.Item value="drafts">Drafts</SegmentedControl.Item>
-                        <SegmentedControl.Item value="sent">Sent</SegmentedControl.Item>
-                    </SegmentedControl.Root>
 
                 </nav>
             </header>
