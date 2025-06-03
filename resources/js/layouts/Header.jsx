@@ -16,7 +16,7 @@ export default function Header({children}){
                     rounded-lg
                     flex items-center content-center justify-center
                     text-white text-md
-                    transform transition-all hover:text-cyan-100 hover:cursor-pointer" href="/">
+                    transform transition-all hover:text-cyan-100 hover:cursor-pointer" href="/" >
                         Creators
                     </Link>
 
