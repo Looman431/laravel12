@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 use Inertia\Inertia;
-use Illuminate\Support\Facades\Auth;
 
 class CreatorsController extends Controller
 {
@@ -18,15 +17,7 @@ class CreatorsController extends Controller
     }
 
     public function lore(){
-        //$test = 'test';
-        //if(Auth::guest()){
-           //$test = 'aboba';
-        //}
-        //$test = Auth::guest();
-        $test = Auth::user()->name;
-        return Inertia::render('WelcomeCreators/Lore', [
-            'Test' => $test,
-        ]);
+        return Inertia::render('WelcomeCreators/Lore', []);
     }
 
     public function CreatorsDescription(){
