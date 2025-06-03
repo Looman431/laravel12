@@ -15,9 +15,7 @@ export default function Header({children}){
                 space-x-10">
                     <Link className="
                     flex items-center" href="/">
-                        <FaTools className="
-                        h-6 w-6" />
-                        <h1>Creators</h1>
+                        Creators
                     </Link>
                     <Link className="
                     rounded-lg
@@ -35,6 +33,9 @@ export default function Header({children}){
                     transform transition-all hover:text-cyan-100 hover:cursor-pointer" href="/projects">
                         Проекты
                     </Link>
+                    <Button>
+                        <BookmarkIcon /> Bookmark
+                    </Button>
 
                 </nav>
             </header>
