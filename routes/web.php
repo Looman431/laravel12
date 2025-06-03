@@ -22,13 +22,15 @@ Route::get('/creators/lore',[CreatorsController::class,'lore']);
 Route::get('/creators/description',[CreatorsController::class,'CreatorsDescription']);
 
 //Роутеры projects
-//Route::get('/projects', [CreatorsController::class, 'projects']);
-Route::get('/projects/create',[CreatorsController::class,'create']);
-Route::post('/projects/create/store',[CreatorsController::class,'store']);
-//Route::get('/projects/{project}',[CreatorsController::class,'show'])->name('projects.show');
+Route::get('/projects', [ProjectsController::class, 'index']);
+Route::middleware('auth')->group(function () {
+    Route::get('/projects/create',[ProjectsController::class,'create']);
+    Route::post('/projects/create/store',[ProjectsController::class,'store']);
+});
+Route::get('/projects/{project}',[ProjectsController::class,'show']); //->name('projects.show');
 
 //Роутер ресурса projects (новый)
-Route::resource('projects', ProjectsController::class)->except(['create','store']);
+//Route::resource('projects', ProjectsController::class)->except(['create','store','show']);
 
 //Тест ларавеля без вайта
 Route::view('/laravel', 'test');
