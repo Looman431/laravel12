@@ -8,9 +8,7 @@ export default function Welcome(){
             <Header children={undefined} />
             <div className="flex justify-center">
                 <img src="/site-bg.png" className="
-                w-[85.5%] h-auto
-                rounded-2xl
-                mt-10" alt=""></img>
+                w-full h-auto" alt=""></img>
                 <img src="/2022-07-16_18-40-19-removebg-preview.png" className="absolute" alt=""></img>
                 <h1 className="absolute mx-auto">Креаторс</h1>
             </div>
