@@ -8,7 +8,7 @@ export default function Welcome(){
             <Header children={undefined} />
             <div className="flex justify-center">
                 <img src="/site-bg.png" className="
-                w-700 h-200
+                w-500 h-200
                 object-cover
                 rounded-2xl
                 mt-10" alt=""></img>
