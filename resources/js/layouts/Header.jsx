@@ -21,6 +21,7 @@ export default function Header({children}){
                     </Link>
 
                     <Link className="
+                    mr-10
                     rounded-lg
                     flex items-center content-center justify-center
                     text-white text-md
@@ -35,6 +36,15 @@ export default function Header({children}){
                     text-white text-md
                     transform transition-all hover:text-cyan-100 hover:cursor-pointer" href="/projects">
                         Проекты
+                    </Link>
+
+                    <Link className="
+                    mr-10
+                    rounded-lg
+                    flex items-center content-center justify-center
+                    text-white text-md
+                    transform transition-all hover:text-cyan-100 hover:cursor-pointer" href="/">
+                        Форум
                     </Link>
 
                 </nav>
