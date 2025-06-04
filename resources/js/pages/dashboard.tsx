@@ -2,6 +2,8 @@ import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import AppLayout from '@/layouts/app-layout';
 import { type BreadcrumbItem } from '@/types';
 import { Head } from '@inertiajs/react';
+import { Link } from "@inertiajs/react";
+import React from 'react';
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
@@ -26,8 +28,22 @@ export default function Dashboard() {
                         <PlaceholderPattern className="absolute inset-0 size-full stroke-neutral-900/20 dark:stroke-neutral-100/20" />
                     </div>
                 </div>
-                <div className="border-sidebar-border/70 dark:border-sidebar-border relative min-h-[100vh] flex-1 overflow-hidden rounded-xl border md:min-h-min">
-                    <PlaceholderPattern className="absolute inset-0 size-full stroke-neutral-900/20 dark:stroke-neutral-100/20" />
+                <div className="
+            w-full
+            flex justify-center items-center">
+                    <Link className="
+                h-16 w-124
+                mt-5
+                rounded
+                bg-blue-400
+                text-lg text-white font-semibold
+                flex justify-center items-center
+                transition ease-in-out
+                hover:bg-white hover:text-blue-400 hover:-translate-y-1" href="/projects/preview">
+                        Создать проект
+                    </Link>
+
+
                 </div>
             </div>
         </AppLayout>

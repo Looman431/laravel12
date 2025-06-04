@@ -1,9 +1,9 @@
 import {useForm} from "@inertiajs/react";
 import React from 'react';
-import Header from "../layouts/Header.jsx"
+import Header from "../../layouts/Header.jsx"
 
 
-function CreateProject(){
+function CreatePreview(){
     const { data, setData, post, errors, processing } = useForm({
         ProjectName: "",
         ProjectShortDescription: "",
@@ -12,7 +12,7 @@ function CreateProject(){
 
     function submit (e) {
         e.preventDefault()
-        post('/projects/create/store')
+        post('/projects/previews/store')
     }
 
     // Функция для обработки выбора файла
@@ -58,6 +58,6 @@ function CreateProject(){
     )
 }
 
-CreateProject.layout = page => <Header children={page}/>
+CreatePreview.layout = page => <Header children={page}/>
 
-export default CreateProject
+export default CreatePreview

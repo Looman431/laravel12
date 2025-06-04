@@ -32,7 +32,7 @@ class CreatorsController extends Controller
         ]);
     }
     public function create(){
-        return Inertia::render('CreateProject', []);
+        return Inertia::render('CreatePreview', []);
     }
     public function store(Request $request){
        $validatedData = $request->validate([

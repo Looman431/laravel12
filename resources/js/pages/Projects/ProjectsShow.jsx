@@ -1,4 +1,4 @@
-import Header from "../layouts/Header.jsx";
+import Header from "../../layouts/Header.jsx";
 import React from 'react';
 import { Link } from "@inertiajs/react";
 function ProjectsShow(){
