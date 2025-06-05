@@ -24,11 +24,15 @@ Route::get('/creators/description',[CreatorsController::class,'CreatorsDescripti
 
 //Проекты
 Route::get('/projects', [NewProjectsController::class, 'index']); //Отображение проектов
-Route::get('/projects/{project}', [NewProjectsController::class, 'show']); //Отображение конкретного проекта
 Route::redirect('/projects/create', '/projects/preview'); //Начало создания проекта
-Route::get('/projects/preview', [NewProjectsController::class, 'preview']); //Создания "Превью" проекта
-Route::get('/projects/preview/store', [NewProjectsController::class, 'preview_store']); //Сохранение "Превью" проекта
-Route::get('/projects/{project}/edit', [NewProjectsController::class, 'edit']); //Страничка редактирования конкретного проекта
+
+Route::middleware('auth')->group(function () {
+    Route::get('/projects/preview', [NewProjectsController::class, 'preview']); //Создания "Превью" проекта
+    Route::post('/projects/preview/store', [NewProjectsController::class, 'preview_store']); //Сохранение "Превью" проекта
+
+    Route::get('/projects/{project}', [NewProjectsController::class, 'show']); //Страничка отображения конкретного проекта
+    Route::get('/projects/{project}/edit', [NewProjectsController::class, 'edit']); //Страничка редактирования конкретного проекта
+});
 
 
 

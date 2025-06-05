@@ -12,7 +12,7 @@ function CreatePreview(){
 
     function submit (e) {
         e.preventDefault()
-        post('/projects/previews/store')
+        post('/projects/preview/store')
     }
 
     // Функция для обработки выбора файла

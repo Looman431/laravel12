@@ -45,7 +45,7 @@ class NewProjectsController extends Controller
             'ProjectShortDescription' => $validatedData['ProjectShortDescription'], // Соответствует столбцу DB
             'ProjectImagePath' => $imagePath,                          // Соответствует новому столбцу DB
         ]);
-        return Redirect::to('/projects/{project}edit');
+        return Redirect::to('/projects/{project}/edit');
     }
 
     //Контроллер Редактирования основного проекта
