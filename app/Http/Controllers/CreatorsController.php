@@ -23,38 +23,4 @@ class CreatorsController extends Controller
     public function CreatorsDescription(){
         return Inertia::render('WelcomeCreators/CreatorsDescription', []);
     }
-
-    //Контроллеры Projects
-    public function projects(CreatorsModel $creators){
-        $Project = CreatorsModel::latest()->paginate(5);
-        return Inertia::render('Projects', [
-            'Project' => $Project,
-        ]);
-    }
-    public function create(){
-        return Inertia::render('CreatePreview', []);
-    }
-    public function store(Request $request){
-       $validatedData = $request->validate([
-           'ProjectName' => 'required',
-           'ProjectShortDescription' => 'required|max:100',
-           'project_image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-       ]);
-       $imagePath = null;
-       if($request->hasFile('project_image')){
-           $imagePath = $request->file('project_image')->store('ShortViewIcons', 'public');
-       }
-
-        CreatorsModel::create([
-            'ProjectName' => $validatedData['ProjectName'],                 // Соответствует столбцу DB
-            'ProjectShortDescription' => $validatedData['ProjectShortDescription'], // Соответствует столбцу DB
-            'ProjectImagePath' => $imagePath,                          // Соответствует новому столбцу DB
-        ]);
-        return Redirect::to('/projects');
-    }
-    public function show(CreatorsModel $project){
-        Inertia::render('ProjectsShow', [
-             'Project' => $project,
-        ]);
-    }
 }
