@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\CreatorsController;
-use App\Http\Controllers\ProjectsController;
 use App\Http\Controllers\NewProjectsController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -34,18 +33,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/projects/{project}/edit', [NewProjectsController::class, 'edit']); //Страничка редактирования конкретного проекта
 });
 
-
-
-//Роутеры projects старые
-//Route::get('/projects', [ProjectsController::class, 'index']);
-//Route::middleware('auth')->group(function () {
-    //Route::get('/projects/create',[ProjectsController::class,'create']);
-    //Route::post('/projects/create/store',[ProjectsController::class,'store']);
-//});
-//Route::get('/projects/{project}',[ProjectsController::class,'show']); //->name('projects.show');
-
-//Роутер ресурса projects (новый)
-//Route::resource('projects', ProjectsController::class)->except(['create','store','show']);
-
 //Тест ларавеля без вайта
 Route::view('/laravel', 'test');
+
+//Ядерный полигон
+Route::get('/test', [CreatorsController::class, 'test']);

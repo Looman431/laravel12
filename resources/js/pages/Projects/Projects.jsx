@@ -5,7 +5,7 @@ import { route } from 'ziggy-js';
 
 function Projects({Project}){
     return(
-        <>я
+        <>
             <div>
                 {Project.data.map(projects => (
                     <div key={projects.id} className="p-4 border-b">
